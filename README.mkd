@@ -100,50 +100,50 @@ hf-scan batch gpt2 bert-base-uncased distilbert-base-uncased
 
 3. Higher rate limits
 
-For now, scanning works out of the box.
+**For now, scanning works out of the box.**
 
-🔍 What Gets Scanned?
-🗂️ File Analysis
+# 🔍 What Gets Scanned?
+## 🗂️ File Analysis
 
-Executables (exe, dll, sh, bat)
+1. Executables (exe, dll, sh, bat)
 
-Suspicious binaries
+2. Suspicious binaries
 
-Pickle-based PyTorch weights
+3. Pickle-based PyTorch weights
 
-Path traversal attempts
+5. Path traversal attempts
 
-Embedded scripts
+6. Embedded scripts
 
-🧾 License Analysis
+## 🧾 License Analysis
 
-Missing license
+1. Missing license
 
-Non-commercial restrictions
+2. Non-commercial restrictions
 
-Copyleft obligations
+3. Copyleft obligations
 
-License mismatches
+4. License mismatches
 
-🧱 Metadata Analysis
+## 🧱 Metadata Analysis
 
-Missing or incomplete model card
+1. Missing or incomplete model card
 
-No license specified
+2. No license specified
 
-Suspicious or misleading tags
+3. Suspicious or misleading tags
 
-Low metadata completeness scores
+4. Low metadata completeness scores
 
-🛑 Vulnerability Analysis
+## 🛑 Vulnerability Analysis
 
-Unsafe loading patterns
+1. Unsafe loading patterns
 
-Embedded Python code
+2. Embedded Python code
 
-Outdated or vulnerable Python packages
+3. Outdated or vulnerable Python packages
 
-Static heuristics for possible exploits
+4. Static heuristics for possible exploits
 
 📊 Risk Scoring
 Score	Severity	Meaning
@@ -154,11 +154,11 @@ Score	Severity	Meaning
 
 # 🧪 Examples
 
-scan_example.py — Basic demo
+a) scan_example.py — Basic demo
 
-batch_scan.py — Multi-model scanning
+b) batch_scan.py — Multi-model scanning
 
-custom_rules.py — Extend with your own rules
+c) custom_rules.py — Extend with your own rules
 
 # 🛡️ Security Patterns
 
@@ -212,6 +212,7 @@ MIT License — free to use, modify, and distribute.
 
 This tool provides best-effort security analysis.
 Always review and sandbox unknown models before execution.
+
 
 
 
